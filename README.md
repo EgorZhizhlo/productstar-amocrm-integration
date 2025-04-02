@@ -1,9 +1,9 @@
 # Documentation
 
-## Endpoints:
-  METHOD: POST 
-  URL: https://egorzhizhlo.ru/ris-integration/create-deal/product/get-order
-    REQUEST BODY:
+## Endpoints:  
+  METHOD: **POST**  
+  URL: **https://egorzhizhlo.ru/ris-integration/create-deal/product/get-order**  
+    REQUEST BODY:  
     ```json
     {
       "name": string,
@@ -13,7 +13,7 @@
       "url": string
     }
     ```
-    RESPONSE BODY:
+    RESPONSE BODY:  
     ```json
     {
       "success": true,
