@@ -5,25 +5,25 @@
   URL: **https://egorzhizhlo.ru/ris-integration/create-deal/product/get-order**  
     REQUEST BODY:  
     ```json
-    {
-      "name": string,
-      "phone": string,
-      "email": string,
-      "campaign_id": string,
-      "url": string
-    }
+    {  
+      "name": string,  
+      "phone": string,  
+      "email": string,  
+      "campaign_id": string,  
+      "url": string  
+    }  
     ```
     RESPONSE BODY:  
     ```json
-    {
-      "success": true,
-      "data": {
-        "name": string,
-        "phone": string,
-        "email": string",
-        "campaign_id": string,
-        "url": string
-      }
+    {  
+      "success": true,  
+      "data": {  
+        "name": string,  
+        "phone": string,  
+        "email": string",  
+        "campaign_id": string,  
+        "url": string  
+      }  
     }```
 
 ## Deployment(Необходим Docker и Docker Compouse)
