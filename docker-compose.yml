@@ -1,0 +1,32 @@
+services:
+  amocrm_integrations:
+    build: .
+    expose:
+      - "8080"
+    volumes:
+      - .:/amocrm_integrations
+    restart: always
+    networks:
+      - nginx_network
+    environment:
+      - client_id=${client_id}
+      - client_secret=${client_secret}
+      - subdomain=${subdomain}
+      - redirect_url=${redirect_url}
+      - twety_min_code=${twety_min_code}
+      - ris_product_pipeline_id=${ris_product_pipeline_id}
+
+  nginx:
+    image: nginx:latest
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./etc/ssl:/etc/ssl:ro
+    ports:
+      - "80:80"
+      - "443:443"
+    networks:
+      - nginx_network
+
+networks:
+  nginx_network:
+    external: true
