@@ -4,7 +4,7 @@
   METHOD: **POST**  
   URL: **https://egorzhizhlo.ru/ris-integration/create-deal/product/get-order**  
     REQUEST BODY:  
-    ```json
+    ```
     {  
       "name": string,  
       "phone": string,  
@@ -14,7 +14,7 @@
     }  
     ```
     RESPONSE BODY:  
-    ```json
+    ```
     {  
       "success": true,  
       "data": {  
