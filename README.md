@@ -28,11 +28,11 @@
     ```  
 
 ## Deployment(Необходим Docker и Docker Compouse)
-  1. Клонируем репозиторий к себе на сервер:
+  1. **Клонируем репозиторий к себе на сервер:**
      - git clone https://github.com/EgorZhizhlo/productstar-amocrm-integration.git
-  2. Переходим в директорию проекта:
+  2. **Переходим в директорию проекта:**
      - cd productstar-amocrm-integration
-  3. Корректируем .env файл согласно вашей интеграции в amocrm:
+  3. **Корректируем .env файл согласно вашей интеграции в amocrm:**
      - nano .env
     ```
       client_id="ID интеграции"
@@ -42,9 +42,9 @@
       twety_min_code="Код авторизации(действителен 20 минут)"
       ris_product_pipeline_id="ID Воронки в которую должны падать заявки"
     ```
-  4. Разворачиваем проект:
+  4. **Разворачиваем проект:**
      - chmod +x project_deployment.sh && ./project_deployment.sh
-  5. Смотрим как развернулись сервисы через команду:
+  5. **Смотрим как развернулись сервисы через команду:**
      - docker ps(В списке должны быть 2 сервиса: **nginx** и **amocrm_integrations**
 
      
