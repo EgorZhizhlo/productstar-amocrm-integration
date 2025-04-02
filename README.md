@@ -43,6 +43,7 @@
   4. **Разворачиваем проект:**
      - chmod +x project_deployment.sh && ./project_deployment.sh
   5. **Смотрим как развернулись сервисы через команду:**
-     - docker ps(В списке должны быть 2 сервиса: **nginx** и **amocrm_integrations**
+     - docker ps
+         * В списке должны быть 2 сервиса: **nginx** и **amocrm_integrations**
 
      
