@@ -3,8 +3,8 @@
 ## Endpoints:  
   METHOD: **POST**  
   URL: **https://egorzhizhlo.ru/ris-integration/create-deal/product/get-order**  
-    REQUEST BODY:  
-    ```
+    REQUEST BODY:    
+    ```json   
     {  
       "name": string,  
       "phone": string,  
@@ -12,9 +12,9 @@
       "campaign_id": string,  
       "url": string  
     }  
-    ```
-    RESPONSE BODY:  
-    ```
+    ```   
+    RESPONSE BODY:   
+    ```json   
     {  
       "success": true,  
       "data": {  
@@ -24,7 +24,8 @@
         "campaign_id": string,  
         "url": string  
       }  
-    }```
+    }
+    ```  
 
 ## Deployment(Необходим Docker и Docker Compouse)
   1. Клонируем репозиторий к себе на сервер:
