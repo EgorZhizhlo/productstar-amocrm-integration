@@ -78,6 +78,14 @@ async def ris_create_deal_product(
                         "value": "RisPromo"
                     }
                 ]
+            },
+            {
+                "field_code": "sale_type",
+                "values": [
+                    {
+                        "value": "RisPromo"
+                    }
+                ]
             }
         ]
     }
