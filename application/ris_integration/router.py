@@ -80,7 +80,7 @@ async def ris_create_deal_product(
                 ]
             },
             {
-                "field_code": "sale_type",
+                "field_id": 666391,
                 "values": [
                     {
                         "value": "RisPromo"
